@@ -19,7 +19,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section id="hero" className="relative min-h-screen flex flex-col">
+        <section id="hero" className="relative min-h-[100svh] flex flex-col">
             {/* ── Background with Ken Burns zoom ── */}
             <div className="absolute inset-0 z-0 overflow-hidden">
                 <Image
@@ -36,11 +36,11 @@ export default function Hero() {
             </div>
 
             {/* ── Main Content ── */}
-            <div className="container-wide relative z-10 flex-1 flex items-center pt-[90px] pb-8">
+            <div className="container-wide relative z-10 flex-1 flex items-center pt-[140px] md:pt-[120px] pb-10">
                 <div
                     className={`max-w-2xl transition-all duration-1000 ease-out ${visible
-                            ? "opacity-100 translate-y-0"
-                            : "opacity-0 translate-y-6"
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-6"
                         }`}
                 >
                     {/* Badge */}
@@ -98,8 +98,8 @@ export default function Hero() {
                 <div className="container-wide">
                     <div
                         className={`grid grid-cols-2 md:grid-cols-4 border border-white/15 bg-white/5 backdrop-blur-md rounded-sm mb-0 transition-all duration-1000 delay-500 ease-out ${visible
-                                ? "opacity-100 translate-y-0"
-                                : "opacity-0 translate-y-4"
+                            ? "opacity-100 translate-y-0"
+                            : "opacity-0 translate-y-4"
                             }`}
                     >
                         {stats.map((stat, i) => (
