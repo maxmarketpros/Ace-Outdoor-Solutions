@@ -1,15 +1,10 @@
-/* ── Nearby areas: edit this list as needed ── */
 const nearbyAreas = [
-    "Santa Fe",
-    "Texas City",
-    "La Marque",
-    "Hitchcock",
-    "Dickinson",
+    "Webster",
     "League City",
     "Friendswood",
-    "Alvin",
-    "Galveston",
+    "Santa Fe",
     "Pearland",
+    "Manvel",
 ];
 
 export default function ServiceArea() {
@@ -28,9 +23,6 @@ export default function ServiceArea() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start max-w-4xl mx-auto">
                     {/* Area Chips */}
                     <div>
-                        <p className="text-xs text-[var(--color-muted)] uppercase tracking-wider font-semibold mb-4">
-                            Examples — easy to edit
-                        </p>
                         <div className="flex flex-wrap gap-2">
                             {nearbyAreas.map((area, i) => (
                                 <span
