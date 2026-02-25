@@ -1,3 +1,5 @@
+"use client";
+
 export default function EstimateForm() {
     return (
         <section id="contact" className="section-padding bg-white" aria-labelledby="estimate-heading">
@@ -50,6 +52,7 @@ export default function EstimateForm() {
                             </p>
                             <a
                                 href="tel:3462370573"
+                                onClick={() => typeof window !== 'undefined' && (window as any).gtag_report_conversion?.('tel:3462370573')}
                                 className="btn btn-primary w-full justify-center"
                             >
                                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">

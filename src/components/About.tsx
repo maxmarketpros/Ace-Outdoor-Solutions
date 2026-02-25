@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 export default function About() {
@@ -36,7 +38,7 @@ export default function About() {
                             <a href="#contact" className="btn btn-primary">
                                 Get Your Free Estimate
                             </a>
-                            <a href="tel:3462370573" className="btn btn-secondary">
+                            <a href="tel:3462370573" onClick={() => typeof window !== 'undefined' && (window as any).gtag_report_conversion?.('tel:3462370573')} className="btn btn-secondary">
                                 Call Zach
                             </a>
                         </div>

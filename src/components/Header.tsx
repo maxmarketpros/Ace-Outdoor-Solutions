@@ -59,6 +59,7 @@ export default function Header() {
                 <div className="hidden lg:flex items-center gap-3">
                     <a
                         href="tel:3462370573"
+                        onClick={() => typeof window !== 'undefined' && (window as any).gtag_report_conversion?.('tel:3462370573')}
                         className="text-sm font-semibold text-[var(--color-secondary)] hover:text-[var(--color-secondary-dark)] transition-colors flex items-center gap-1.5"
                     >
                         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -109,6 +110,7 @@ export default function Header() {
                     <hr className="border-[var(--color-border)] my-2" />
                     <a
                         href="tel:3462370573"
+                        onClick={() => typeof window !== 'undefined' && (window as any).gtag_report_conversion?.('tel:3462370573')}
                         className="px-3 py-2.5 text-base font-semibold text-[var(--color-secondary)] flex items-center gap-2"
                     >
                         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
